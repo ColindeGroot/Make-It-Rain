@@ -7,4 +7,4 @@
 <br>
 
 ## Hier komt de live versie van de site
-## [Mijn Trello pagina]](https://trello.com/b/SkI1gcQp/make-it-rain)
+## [Mijn Trello pagina](https://trello.com/b/SkI1gcQp/make-it-rain)
