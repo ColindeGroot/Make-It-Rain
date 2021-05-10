@@ -25,13 +25,14 @@ body {
   }
   
   #navbar a.active {
-    background-color: #1eb123;
+    background-color: orangered;
     color: white;
   }
   
   .hero-image {
     background : cover;
-    background: url(../images/mountaintest.jpg) no-repeat center center fixed;
+    background-image: linear-gradient(to bottom right, Orange, red);
+    /* WERKENDE FUNCTIE: (moet cover voor background) background: url(../images/mountaintest.jpg) no-repeat center center fixed;*/
     height: 50vh;
     width: 100%;
     background-position: center;
@@ -51,6 +52,7 @@ body {
 
   .intro-h1{
       color: white;
+      text-shadow: -1px 0 orange, 0 1px orange, 1px 0 orange, 0 -1px orange;
       font-size: 4em;
   }
 
@@ -59,14 +61,26 @@ body {
     font-size: 30px;
 }
 
+#product-overview{
+  background-color: lime;
+  display: flex;
+}
+
+#first-overview{
+  background-color: purple;
+}
+
+#second-overview{
+  background-color: saddlebrown;
+}
+
 .item{
   margin: 10px;
-  border: 1px solid gray;
+  border: 10px solid gray;
 }
 
 .product{
-  display: inline-block;
-  align-items: center;
-  justify-content: center;
-  background-color: green;
+  display: flex;
+  background-color: orangered;
+  border: blue 4px solid;
 }
