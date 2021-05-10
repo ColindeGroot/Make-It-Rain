@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div id="navbar">
+    <a class="active" href="javascript:void(0)">Home</a>
+    <a href="javascript:void(0)">News</a>
+    <a href="javascript:void(0)">Contact</a>
+  </div>
+
+  <div class="hero-image">
+    <div class="hero-text">
+      <h1 class="intro-h1" >Responsive</h1>
+      <h3 class="intro-h3">Random text</h3>
+    </div>
+  </div>
+
+  <p>Page content..</p>
+  <p>Overview products</p>
+
+  <div>
+
+    <div class="item first-row">
+      <div class="product toy1">product</div>
+      <div class="product toy2">product</div>
+      <div class="product toy3">product</div>
+    </div>
+
+    <div class="item second-row">
+      <div class="product toy4">product</div>
+      <div class="product toy5">product</div>
+      <div class="product toy6">product</div>
+    </div>
+
+  </div>
+  <script>
+    $(document).ready(function(){
+	$('.hamburger-shell').click(function(){
+		$('#menu').slideToggle(300);
+		$('.top').toggleClass('rotate');
+		$('.middle').toggleClass('rotate-back');
+		$('.menu-name').toggleClass('bump');
+		$('.bg-cover').toggleClass('reveal');
+	});
+	$('.bg-cover').click(function(){
+		$('#menu').slideToggle(300);
+		$('.top').toggleClass('rotate');
+		$('.middle').toggleClass('rotate-back');
+		$('.menu-name').toggleClass('bump');
+		$('.bg-cover').toggleClass('reveal');
+	})
+});
+  </script>
+</body>
+</html>
