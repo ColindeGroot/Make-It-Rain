@@ -2,6 +2,7 @@
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: whitesmoke
   }
 
   #navbar {
@@ -63,7 +64,7 @@ body {
 
 #product-overview{
   background-color: lime;
-  display: flex;
+  display: block;
 }
 
 #first-overview{
@@ -74,13 +75,15 @@ body {
   background-color: saddlebrown;
 }
 
-.item{
+.item div{
+  display: inline-block;
   margin: 10px;
   border: 10px solid gray;
 }
 
 .product{
   display: flex;
+  width: 30%;
+  height: 30vh;
   background-color: orangered;
-  border: blue 4px solid;
 }
