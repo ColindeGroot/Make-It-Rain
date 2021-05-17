@@ -3,13 +3,24 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
   <div id="navbar">
-    <a class="active" href="javascript:void(0)">Home</a>
-    <a href="javascript:void(0)">News</a>
-    <a href="javascript:void(0)">Contact</a>
+    <div class="topnav">
+    <a href="#home" class="">logo</a>
+
+      <div id="myLinks">
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+      </div>
+
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+</div>
   </div>
 
   <div class="hero-image">
@@ -19,9 +30,11 @@
     </div>
   </div>
 
-  <p>Page content..</p>
-  <p>Overview products</p>
 
+ <!-- Tussen stuk tussen header en product overview -->
+  <div class="tussenstuk">
+  </div>
+  
   <div id="product-overview">
 
     <div id="first-overview">
@@ -41,6 +54,20 @@
     </div>
 
   </div>
+
+<script>
+
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+
+</script>
+
   <script>
     $(document).ready(function(){
 	$('.hamburger-shell').click(function(){
