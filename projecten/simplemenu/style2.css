@@ -25,11 +25,6 @@ body {
   
   .topnav a:hover {
     background-color: orange;
-    color: black;
-  }
-  
-  .topnav a.active {
-    background-color: orangered;
     color: white;
   }
   
