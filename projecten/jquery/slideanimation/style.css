@@ -1,0 +1,35 @@
+.item{
+    width: 50px;
+    height: 50px;
+    background-color: brown;
+    margin: 20px;
+    }
+
+    .item1{
+        width: 50px;
+        height: 50px;
+        background-color: brown;
+        margin: 20px;
+        }
+
+        .item2{
+            width: 50px;
+            height: 50px;
+            background-color: brown;
+            margin: 20px;
+        }
+
+        .a2{
+            width: 50px;
+            height: 50px;
+            background-color: brown;
+            margin: 20px;
+        }
+
+#overzicht{
+    display: flex;
+
+}
+
+
+
