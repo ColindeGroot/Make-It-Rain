@@ -4,6 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="style2.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
 
@@ -33,7 +34,9 @@
 
   <div id="first-overview">
     <div class="item first-row">
-      <div class="product toy1">product</div>
+      <div class="iten" style="background:#e26319;height:150px;width:150px;position:absolute;">
+      </div>
+      <div id="id1" class="product toy1">product</div>
       <div class="product toy2">product</div>
       <div class="product toy3">product</div>
     </div>
@@ -68,6 +71,18 @@ function myFunction() {
     x.className = "topnav";
   }
 }
+
+$(document).ready(function(){
+  $(".iten").click(function(){
+    $(".iten")
+    .animate({height: '300px'})
+    .animate({width: '330px'});
+    $(".close")
+    .animate({height: '40px'})
+    .animate({width: '70px'})
+  });
+});
+
 </script>
 
 </body>

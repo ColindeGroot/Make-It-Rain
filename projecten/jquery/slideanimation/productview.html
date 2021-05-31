@@ -6,10 +6,14 @@
 
 $(document).ready(function(){
   $(".item").click(function(){
-    $("div").animate({left: '500px'})
+    $(".item")
+    .animate({left: '500px'})
     .animate({bottom: '180px'})
     .animate({height: '600px'})
     .animate({width: '600px'});
+    $(".close")
+    .animate({height: '40px'})
+    .animate({width: '70px'})
   });
 });
 
@@ -30,8 +34,8 @@ $(document).ready(function(){
 
 
 
-<div class="item" style="background:#98bf21;height:100px;width:100px;position:absolute;">
-    <button class="close">close</button>
+<div class="item" style="background:#e26319;height:150px;width:150px;position:absolute;">
+    <button class="close" style="height: 20px; width: 60px; font-size: 10px;">close</button>
 </div>
 
 </body>
