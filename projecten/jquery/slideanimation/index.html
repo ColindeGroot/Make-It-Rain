@@ -15,12 +15,14 @@ $(document).ready(function(){ //aanmaken functie, animeren van div element
     herhaal2();
   });
 
-  $(".stop").click(eind) //stop button
+  $(".stop").click(eind) //stop button werkt niet altijd met 2de
   
 });
 
 //ANIMATIE VOOR ITEM (1)
-const herhaal = () => {
+const herhaal = () => { // zorgt ervoor dat het de animatie herhaalt. 
+                          // moet voor nu apparte aanmaken per animatie const (word naar gekeken)
+                          
     var div = $(".item"); // div element aanmaken om te animeren
     div.animate({height: '300px', opacity: '0.5'}, "normal");  // animaties
     div.animate({width: '300px', opacity: '1.0'}, "normal");
@@ -37,11 +39,17 @@ const herhaal = () => {
   const herhaal2 = () => {
     var item = $(".a2"); // div element aanmaken om te animeren
     item.animate({height: '300px', opacity: '0.5'}, "slow");  // animaties
+    setTimeout(500);
     item.animate({height: '200px', opacity: '0.2'}, "slow");
+    setTimeout(500);
     item.animate({height: '30px', opacity: '0.2'}, " slow");
+    setTimeout(500);
     item.animate({height: '200px', opacity: '0.5'}, "slow");  // animaties
+    setTimeout(500);
     item.animate({height: '40px', opacity: '0.2'}, "slow");
+    setTimeout(500);
     item.animate({height: '200px', opacity: '0.2'}, " slow");
+    setTimeout(500);
     item.animate({height: '40px'}, "slow", "swing", () =>{
         setTimeout(herhaal2, 3000); // wacht 2 sec voordat de functie zich herhaalt
     });
