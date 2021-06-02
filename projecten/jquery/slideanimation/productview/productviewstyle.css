@@ -34,7 +34,7 @@ body {
     display: none;
 }
 
-.item{
+#item1{
     background:#e26319;
     height:200px;
     width:200px;

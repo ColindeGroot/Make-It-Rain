@@ -26,9 +26,12 @@
       </a>
     </div>
 
-    <div class="item">
+    <div id="item1">
         <button class="close">close</button>
+        <img src="" alt="">
     </div>
+    
+
   </div>
   <script> 
 
@@ -42,9 +45,9 @@
       }
       
       $(document).ready(function(){
-        $(".item").click(function(e){
+        $("#item1").click(function(e){
           if (e.target == $(this)[0]){
-          $(".item")
+          $("#item1")
           .animate({left: '200px'})
           .animate({bottom: '180px'})
           .animate({height: '600px'})
@@ -59,7 +62,7 @@
 
       $(document).ready(function(){
         $(".close").click(function(){
-          $(".item")
+          $("#item1")
           .animate({right: '200px'})
           .animate({left: '180px'})
           .animate({height: '150px'})
