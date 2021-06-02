@@ -34,19 +34,17 @@
 
   <div id="first-overview">
     <div class="item first-row">
-      <div class="iten" style="background:#e26319;height:150px;width:150px;position:absolute;">
-      </div>
-      <div id="id1" class="product toy1">product</div>
-      <div class="product toy2">product</div>
-      <div class="product toy3">product</div>
+      <div id="id1" class="product iten">product</div>
+      <div id="id2" class="product toy2">product</div>
+      <div id="id3" class="product toy3">product</div>
     </div>
   </div>
 
   <div id="second-overview">
     <div class="item second-row">
-      <div class="product toy4">product</div>
-      <div class="product toy5">product</div>
-      <div class="product toy6">product</div>
+      <div id="id4" class="product toy4">product</div>
+      <div id="id5" class="product toy5">product</div>
+      <div id="id6" class="product toy6">product</div>
     </div>
   </div>
 
@@ -81,6 +79,25 @@ $(document).ready(function(){
     .animate({height: '40px'})
     .animate({width: '70px'})
   });
+});
+
+$(window).resize(function(){     
+
+if ($('#id5').width() == 320 ){
+
+       // is mobile device
+  $(document).ready(function(){
+  $(".iten").click(function(){
+  $(".iten")
+  .animate({height: '150px'})
+  .animate({width: '165px'});
+  $(".close")
+  .animate({height: '20px'})
+  .animate({width: '35px'})
+  });
+});
+}
+
 });
 
 </script>

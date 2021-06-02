@@ -1,42 +1,123 @@
 <!DOCTYPE html>
 <html>
-<head>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script> 
-
-$(document).ready(function(){
-  $(".item").click(function(){
-    $(".item")
-    .animate({left: '500px'})
-    .animate({bottom: '180px'})
-    .animate({height: '600px'})
-    .animate({width: '600px'});
-    $(".close")
-    .animate({height: '40px'})
-    .animate({width: '70px'})
-  });
-});
-
-$(document).ready(function(){
-  $(".close").click(function(){
-    $("div")
-    .animate({height: '150px'})
-    .animate({width: '150px'});
-  });
-});
-
-
-</script> 
-</head>
-<body>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="productviewstyle.css">
+    <title>open and close animation test</title>
+  </head>
+  <body>
 
 
 
 
 
-<div class="item" style="background:#e26319;height:150px;width:150px;position:absolute;">
-    <button class="close" style="height: 20px; width: 60px; font-size: 10px;">close</button>
-</div>
+  <div id="canvas">
 
-</body>
+    <div class="topnav"  id="myTopnav">
+      <a href="#home"    class="active">Home</a>
+      <a href="#news"    class="toptext">News</a>
+      <a href="#contact" class="toptext">Contact</a>
+      <a href="#about"   class="toptext">About</a>
+    
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+    <div class="item">
+        <button class="close">close</button>
+    </div>
+  </div>
+  <script> 
+
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+      
+      $(document).ready(function(){
+        $(".item").click(function(e){
+          if (e.target == $(this)[0]){
+          $(".item")
+          .animate({left: '200px'})
+          .animate({bottom: '180px'})
+          .animate({height: '600px'})
+          .animate({width: '600px'});
+          $(".close")
+          .animate({height: '40px'})
+          .animate({width: '70px'})
+          }
+        });
+  
+      });
+
+      $(document).ready(function(){
+        $(".close").click(function(){
+          $(".item")
+          .animate({right: '200px'})
+          .animate({left: '180px'})
+          .animate({height: '150px'})
+          .animate({width: '150px'});
+        });
+      });
+
+
+
+      // Mobile versie (moet nog gefixt worden)
+
+      $(window).resize(function(){     
+
+      if ($('#canvas').width() == 320 ){
+
+        // is mobile device
+        $(document).ready(function(){
+        $(".item").click(function(){
+        $(".item")
+        .animate({height: '40px'})
+        .animate({width: '60px'});
+        $(".close")
+        .animate({height: '20px'})
+        .animate({width: '35px'})
+        });
+      });
+
+      $(document).ready(function(){
+        $(".item").click(function(){
+          $(".item")
+          .animate({left: '50px'})
+          .animate({bottom: '18px'})
+          .animate({height: '60px'})
+          .animate({width: '60px'});
+          $(".close")
+          .animate({height: '40px'})
+          .animate({width: '70px'})
+        });
+      });
+
+      }
+
+      });
+
+      //$(document).ready(function(){
+        //$(".close").click(function(){
+        //  $("div")
+        //  .animate({
+            //height: '150px'})
+
+          //.animate({
+            //width: '150px'})
+
+        //  .animate({
+      //}, 'slow', function () { $(this).removeAttr('style'); });
+        //});
+      //});
+
+    </script> 
+  </body>
 </html>
