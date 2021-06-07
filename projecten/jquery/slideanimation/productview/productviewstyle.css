@@ -41,6 +41,11 @@ body {
     position:absolute;
 }
 
+#img1{
+  max-width: 100%;
+  height: auto;
+}
+
 .close{
     height: 20px; 
     width: 60px; 
