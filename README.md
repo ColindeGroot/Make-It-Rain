@@ -7,6 +7,6 @@
 <br>
 
 <h2> Overzicht andere werkplekken </h2>
-<h3>Hier komt de live versie van de site</h3> 
+<h3>[website](http://31761.hosts1.ma-cloud.nl/wordpress/)</h3> 
 
 [Mijn Trello pagina](https://trello.com/b/SkI1gcQp/make-it-rain)
